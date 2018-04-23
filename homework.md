@@ -276,3 +276,28 @@ id |                title                | year | show_time
 ## Extension
 
 1. Research how to delete multiple entries from your table in a single command.
+
+DELETE FROM movies WHERE id > 4;
+id |        title        | year | show_time
+----+---------------------+------+-----------
+ 1 | Iron Man            | 2008 | 19:55
+ 2 | The Incredible Hulk | 2008 | 18:40
+ 3 | Iron Man 2          | 2010 | 21:55
+ 4 | Thor                | 2011 | 16:35
+(4 rows)
+
+DELETE FROM movies WHERE year IN ('2013', '2016');
+id |                title                | year | show_time
+----+-------------------------------------+------+-----------
+ 1 | Iron Man                            | 2008 | 19:55
+ 2 | The Incredible Hulk                 | 2008 | 18:40
+ 3 | Iron Man 2                          | 2010 | 21:55
+ 4 | Thor                                | 2011 | 16:35
+ 5 | Captain America: The First Avenger  | 2011 | 13:25
+ 6 | Avengers Assemble                   | 2012 | 22:05
+10 | Captain America: The Winter Soldier | 2014 | 14:45
+12 | Avengers: Age of Ultron             | 2015 | 20:40
+13 | Ant-Man                             | 2015 | 13:50
+16 | Guardians of the Galaxy 2           | 2018 | 00:00
+11 | Guardians of the Galaxy             | 2014 | 21:30
+(11 rows)
