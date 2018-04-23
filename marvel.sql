@@ -192,4 +192,3 @@ UPDATE movies SET show_time = '21:30' WHERE title = 'Guardians of the Galaxy';
 --## Extension
 
 --1. Research how to delete multiple entries from your table in a single command.
---DELETE FROM movies WHERE year = 2013 AND  <> '';
